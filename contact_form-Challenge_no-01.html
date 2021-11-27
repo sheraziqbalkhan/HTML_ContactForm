@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        *{
+             box-sizing: border-box ;
+             border: 1px solid rgb(247, 244, 244) ;
+             margin: 0;
+             padding: 0;
+            
+             font-size: medium;
+             font-family: sans-serif;
+            
+        }
+        h1{
+            background-color:rgb(119, 134, 118) ;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: xx-large;
+            padding: 6px ;
+            margin: 1px;
+        }
+        .contact_heading{
+            background-color:rgb(119, 134, 118) ;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: left;
+            font-size: larger;
+            padding: 10px;
+            
+        }
+        div{
+            padding: 3px 3px 3px 3px;
+           
+            padding: 16px 0px 16px 26px;
+            display: block;
+    
+
+        }
+        .input{
+            padding: 16px 0px 16px 26px;
+    border: 2px solid #c0b7b7 ;
+    border-radius:6px ;
+    width: 40%;
+    text-align: center;
+    letter-spacing:1px ;
+    word-wrap: 3px;
+    outline: none;
+    font-size: 12px;
+    color: #8f7979;
+    position: relative;
+
+        }
+        body{
+    background: #a1a8ad;
+    margin: 0 10px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: normal;
+    padding: 10px ;
+    text-justify: ;
+}
+    
+
+.input{
+    display: flex;
+    text-justify: auto;
+    justify-content: space-between;
+}   
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea{
+
+    width: 90%;
+    padding: 13px;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    margin: 20px;
+    text-justify: auto;
+}
+.send{
+     
+    background-color: rgb(20, 170, 108);
+    text-justify: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:normal;
+    font-style: normal;
+    font-size: 200%;
+    color: lightgrey;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 4px;
+    width:90%;
+    cursor: pointer;
+    text-align: center;
+}
+input[type="submit"]:hover{
+    color: green;
+    background: honeydew;
+}
+
+        
+    </style>
+</head>
+<body>
+    <form action="">
+    <div class="contact_form">
+    <div class="contact_heading">
+    <h1>Contact Us</h1>
+    <p>Contact us for any query or suggestion</p>
+    <p>* shows required feiled</p>
+
+    </div>
+    <div>
+        <div class="name">
+        <label for=""> Name* : </label> 
+       <input type="text" placeholder="Your Complete Name" required class="input">
+       </div>
+       <div>
+       <label for=""> Contact No. : </label> 
+       <input type="text" placeholder="Your Contact Number" class="input">
+    </div>
+    <div>
+       <label for="">Email Address* : </label> 
+       <input type="email" placeholder="Your Valid Email Address" required class="input">
+    </div>
+    <div>
+        <p>
+            <Address>Address :</Address>
+                 <textarea name="address" id="address" cols="40" rows="10" placeholder="Enter your address"></textarea>
+        </p>
+    </div>
+    </div>
+    <div>
+        <label for=""> Your Message* : </label>
+        <input type="text" placeholder="Enter Your Message" required class="input">
+    </div>
+    <input type="submit" value="send" class="send">
+
+</form>
+
+</div>
+</body>
+</html>
